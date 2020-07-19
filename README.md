@@ -8,3 +8,5 @@ run_tests.bat is a little convenience executable to run tests locally on Windows
 (needs mayapy alias setup)
 
 test_transform.py has some common test assertions.
+
+Does not work for Maya 2013, since it's Python has no unittest module.
