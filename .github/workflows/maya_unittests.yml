@@ -12,7 +12,9 @@ jobs:
     - name: Run Unittests
       uses: docker://mottosso/maya:2013sp1 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
-        args: /usr/autodesk/maya/bin/mayapy -m unittest discover -s ./tests -v
+        args: |
+          /usr/autodesk/maya/bin/mayapy -V
+          /usr/autodesk/maya/bin/mayapy -m unittest discover -s ./tests -v
 
   maya2013sp2:
     runs-on: ubuntu-latest
@@ -22,7 +24,9 @@ jobs:
     - name: Load Docker Image
       uses: docker://mottosso/maya:2013sp2 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
-        args: /usr/autodesk/maya/bin/mayapy -m unittest discover -s ./tests -v
+        args: |
+          /usr/autodesk/maya/bin/mayapy -V
+          /usr/autodesk/maya/bin/mayapy -m unittest discover -s ./tests -v
 
   maya2014sp1:
     runs-on: ubuntu-latest
@@ -32,7 +36,9 @@ jobs:
     - name: Run Unittests
       uses: docker://mottosso/maya:2014sp1 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
-        args: /usr/autodesk/maya/bin/mayapy -m unittest discover -s ./tests -v
+        args: |
+          /usr/autodesk/maya/bin/mayapy -V
+          /usr/autodesk/maya/bin/mayapy -m unittest discover -s ./tests -v
 
   maya2014sp2:
     runs-on: ubuntu-latest
