@@ -1,4 +1,4 @@
-name: ExampleTool CI
+name: Example CI
 
 # Run tests on any push or pullRequest event
 on: [push, pull_request]
