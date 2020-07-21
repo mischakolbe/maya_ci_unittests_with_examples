@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Run Unittests
       uses: docker://mottosso/maya:2014sp1 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -18,7 +19,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Load Docker Image
       uses: docker://mottosso/maya:2014sp2 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -28,7 +30,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Run Unittests
       uses: docker://mottosso/maya:2014sp3 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -38,7 +41,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Load Docker Image
       uses: docker://mottosso/maya:2014sp4 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -48,7 +52,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Run Unittests
       uses: docker://mottosso/maya:2015sp1 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -58,7 +63,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Load Docker Image
       uses: docker://mottosso/maya:2015sp2 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -68,7 +74,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Run Unittests
       uses: docker://mottosso/maya:2015sp3 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -78,7 +85,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Load Docker Image
       uses: docker://mottosso/maya:2015sp4 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -88,7 +96,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Run Unittests
       uses: docker://mottosso/maya:2015sp5 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -98,7 +107,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Load Docker Image
       uses: docker://mottosso/maya:2015sp6 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -108,7 +118,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Run Unittests
       uses: docker://mottosso/maya:2016sp1 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -118,7 +129,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Load Docker Image
       uses: docker://mottosso/maya:2017 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -128,7 +140,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Run Unittests
       uses: docker://mottosso/maya:2018 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -138,7 +151,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Load Docker Image
       uses: docker://mottosso/maya:2019 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -148,7 +162,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Run Unittests
       uses: docker://mottosso/maya:2020 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
@@ -158,9 +173,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Load Docker Image
       uses: docker://mottosso/maya:2020sp1 # For all available Maya versions, see https://github.com/mottosso/docker-maya
       with:
         args: /usr/autodesk/maya/bin/mayapy -m unittest discover -s ./tests -v
-
