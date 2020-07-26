@@ -9,7 +9,7 @@ Fork or copy/paste to start testing without any headaches.
 # Links
 
 
-* Read this [blog post](XXX "Continuous Integration for Maya Scripts") with a lot of information about this repository.
+* Read this [blog post](https://mykolbe.wordpress.com/2020/07/26/continuous-integration-for-maya-scripts/ "Continuous Integration for Maya Scripts") with a lot of information about this repository.
 
 * Check this [related repository](https://github.com/mischakolbe/maya_ci_unittests "Minimalistic Maya CI unittests repo") for the bare minimum files necessary.
 
