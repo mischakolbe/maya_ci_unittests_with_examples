@@ -11,7 +11,7 @@ Fork or copy/paste to start testing without any headaches.
 
 * Read this [blog post](XXX "Continuous Integration for Maya Scripts") with a lot of information about this repository.
 
-* Check this [related repository](https://github.com/mischakolbe/maya_ci_unittests "Minimalistic Maya CI unittests repo") for example tests.
+* Check this [related repository](https://github.com/mischakolbe/maya_ci_unittests "Minimalistic Maya CI unittests repo") for the bare minimum files necessary.
 
 * Show [Marcus Ottosson](https://mottosso.com/) some love for his wonderful [Maya Docker images](https://github.com/mottosso/docker-maya).
 
